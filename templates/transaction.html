@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+</head>
+<body>
+    <h1> Create New Transaction</h1>
+    <hr>
+    <form action="{{url_for('transaction')}}" method="post">
+        <label for="description">Description</label><br>
+        <input type="text" name="description" id="description"><br>
+        <label for="credit">Credit:</label><br>
+        <input type="number" id="credit" name="credit" ><br>
+        <label for="debit">Debit:</label><br>
+        <input type="number" id="debit" name="debit"><br>
+        <button type="submit"> submit</button>
+        
+
+    </form>
+</body>
+</html>
